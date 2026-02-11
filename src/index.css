@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Registering the Figma font */
+  --font-jago: "Jago", sans-serif;
+}
+
+@font-face {
+  font-family: 'Jago';
+  src: url('/fonts/Jago-Regular.ttf') format('truetype'); /* Ensure your font file is here */
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Global resets for the specific look */
+:root {
+  font-family: var(--font-jago);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar for the chat area */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+} 
